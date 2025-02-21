@@ -64,7 +64,7 @@ async def deduct_operation(callback: CallbackQuery, state: FSMContext):
 
 @dp.message(Calc.input_numbers)
 async def check_numbers(message: Message, state: FSMContext):
-    await message.reply("вы ввели числа")
+    await message.reply(f"вы ввели числа: {message.text}")
 
 
 @dp.message()
